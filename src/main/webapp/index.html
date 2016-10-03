@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<title>Simple Calculator</title>
+  Amogh
+<body>
+enter the number 1 : <input type="number"id="num1"required autofocus>
+enter the number 2 :<input type="number"id="num2"required>
+<input type="button"value="Add"onclick="AddFunc();">
+Result is :<p id="result">
+</p>
+<script>
+function AddFunc()
+{
+var n1=document.getElementById("num1").value;
+var n2=document.getElementById("num2").value;
+var result=+n1 + +n2;
+alert("Sum is " +result);
+document.getElementById("result").innerText=result;
+}
+</script>
+</body>
+</html>
